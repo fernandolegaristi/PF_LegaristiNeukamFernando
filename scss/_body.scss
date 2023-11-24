@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Roboto:ital,wght@1,100&display=swap');
+
+
+body {
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-pizarra-helado-dibujado-mano_23-2148989213.jpg?w=740&t=st=1697333843~exp=1697334443~hmac=56218a9510217c643cca8d307d67f6d64605e18c9a495301f2ac45cd6117698d);
+}
+
+
+
+a {
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: 35% 40%;
+    gap: 10px;
+
+}
+
+.contacto div img {
+    margin-top: 25px;
+    max-width: 160%;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+   .contacto{
+    grid-template-columns: 95% 0%;
+   }
+   .contacto div img {
+    display: none;
+}
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 40, 82);
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+main h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 8px;
+    text-align: center;
+    font-size: 25px;
+}
+
+p {
+    margin: 5px;
+}
+
+.datos_locales {
+    flex-direction: column;
+}
+
+.mapas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.datos_locales {
+    text-align: center;
+}
+
+.datos_locales p {
+    font-size: 13px;
+}
+
+.datos_locales h4 {
+    text-decoration: underline;
+}
+
+#sobre_nosotros {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    font-size: 20px;
+}
+
+#sobre_nosotros img {
+    width: 98%;
+    height: auto;
+}
+
+@media (max-width: 1450px) {
+    #sobre_nosotros {
+        font-size: 18px;
+        grid-template-columns: 70% 30%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #sobre_nosotros {
+        font-size: 16px;
+        grid-template-columns: 60% 40%;
+    }
+}
+
+@media (max-width: 875px) {
+    #sobre_nosotros {
+        font-size: 14px;
+        grid-template-columns: 55% 45%;
+    }
+}
+
+@media (max-width: 730px) {
+    #sobre_nosotros {
+        font-size: 10px;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    #sobre_nosotros img {
+        display: none
+    }
+    #sobre_nosotros {
+        grid-template-columns: 100%;
+    }
+}
+
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.productos p {
+    text-align: center;
+}
