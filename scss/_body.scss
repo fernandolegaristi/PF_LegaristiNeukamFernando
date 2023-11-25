@@ -5,12 +5,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Roboto:ital,wght@1,100&display=swap');
 
+@mixin centro {
+    text-align: center;
+}
+
+.productosCard { 
+    background-color: #fafafa;
+    color:  rgb(40, 40, 82);
+    font-weight: bold;
+    border-radius: 12px;
+    height: max-content;
+    width: auto;
+    margin: 1.5%;
+}
 
 body {
     background-image: url(https://img.freepik.com/vector-gratis/fondo-pizarra-helado-dibujado-mano_23-2148989213.jpg?w=740&t=st=1697333843~exp=1697334443~hmac=56218a9510217c643cca8d307d67f6d64605e18c9a495301f2ac45cd6117698d);
 }
 
-
+h3 {
+    font-size: medium;
+    font-weight: 700;
+}
 
 a {
     font-family: 'Kanit', sans-serif;
@@ -57,12 +73,12 @@ main {
 }
 
 main h1 {
-    text-align: center;
+    @include centro();
 }
 
 h2 {
     margin: 8px;
-    text-align: center;
+    @include centro();
     font-size: 25px;
 }
 
@@ -79,17 +95,13 @@ p {
     justify-content: space-evenly;
 }
 
+
 .datos_locales {
-    text-align: center;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
 }
 
-.datos_locales p {
-    font-size: 13px;
-}
-
-.datos_locales h4 {
-    text-decoration: underline;
-}
 
 #sobre_nosotros {
     display: grid;
@@ -147,5 +159,6 @@ p {
 }
 
 .productos p {
-    text-align: center;
+    @include centro();
 }
+
